@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monsoon Fish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" integrity="sha512-X/RSQYxFb/tvuz6aNRTfKXDnQzmnzoawgEQ4X8nZNftzs8KFFH23p/BA6D2k0QCM4R0sY1DEy9MIY9b3fwi+bg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css" integrity="sha512-f28cvdA4Bq3dC9X9wNmSx21rjWI+5piIW/uoc2LuQ67asKxfQjUow2MkcCNcfJiaLrHcGbed1wzYe3dlY4w9gA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header -->
+    <header class="z-10 w-full">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-white h-14 bg-white shadow-md md:px-10 lg:px-6">
+           <div>
+            <a class="navbar-brand" href="#">TED</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+           </div>
+          
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="dropdown">
+                    <a class="dropbtn">Watch <b class=""></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Ted Talks</a></li>
+                      <li><a href="#">TED Recommends</a></li>
+                      <li><a href="#">playlists</a></li>
+                      <li><a href="#">TED Series</a></li>
+                      <li><a href="#">TED-Ed Videos</a></li>
+                      <li><a href="#">TEDx Talks</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropbtn">discover <b class=""></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Topic</a></li>
+                      <li><a href="#">Podcast</a></li>
+                      <li><a href="#">Idea Blogs</a></li>
+                      <li><a href="">Newsletter</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropbtn">attend <b class=""></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Conference</a></li>
+                      <li><a href="#">TEDx Events</a></li>
+                      <li><a href="#">TED On Screen</a></li>
+                      <li><a href="">TED Courses</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropbtn">participate <b class=""></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Nominate</a></li>
+                      <li><a href="#">Organize a local TEDx Events</a></li>
+                      <li><a href="#">Translate</a></li>
+                      <li><a href="">TED Fellows</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropbtn">about <b class=""></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Our Organization</a></li>
+                      <li><a href="#">Conference</a></li>
+                      <li><a href="#">Program & Initiative</a></li>
+                      <li><a href="">Partner with TED</a></li>
+                      <li><a href="">TED Blog</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a class="dropbtn">sign in <b class=""></b></a>
+                  </li>
+                <button type="button" class="btn btn-primary" id="membership">Membership</button>
+                <span>
+                    <i class="fa fa-search" id="search" aria-hidden="true"></i>
+                </span>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+      <section class="banner">
+        <div class="back-banner">
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 bannerCol">
+                    <h2 class="bannerText">New Year, New Ideas!</h2>
+                    <p class="bannerPara">TED Member support our kission while getting access to live events with TED speakers and more!</p>
+                    <button type="button" class="btn btn-primary " id="joinNow" style="background-color: rgba(217,30,24); height: 40px;">Join now</button>
+                  </div>
+                  <div class="col-lg-6">
+                    <img src="images/2023-2.jpg" class="newYearImg" alt="">
+                  </div>
+              </div>
+         </div>
+        </div>
+      </section>
+
+      <!-- featured starts -->
+      <section class="watch-now w-full  py-5 md:py-10 xl:py-0 ">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+            <div class="row Featured">
+                <div class="col-lg-6 mb-4">
+                    <h4 class="text-3xl md:text-5xl xl:text-6xl font-bold tracking-tighter xl:tracking-tight mb-4 group-hover:text-gray-700 md:mb-3">Featured</h4>
+                    <h3 class="featuredHead text-3xl md:text-5xl xl:text-6xl font-bold tracking-tighter xl:tracking-tight mb-4 group-hover:text-gray-700 md:mb-3">Are insect brains the secret to great AI?</h3>
+                    <p class="text-base leading-md mb-6 text-gray-700 md:mb-5 xl:mb-8 featurePara">In this buzzy talk, neuroscientist Frances S. Chance shares examples of the incredible capabilities of insects -- like the dragonfly's deadly accurate hunting skills -- and shows how untangling how their tiny brains work could lead to breakthroughs in AI</p>
+                    <button type="button" class="btn btn-primary" id="watchNow">Watch now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/AI.jpg" alt="" style="width: inherit;">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- featured ends -->
+
+      <!-- 1st video row  -->
+        <section class="first-video-row">
+            <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+                <div class="row">
+                    <div class="owl-carousel">
+                        <div>
+                            <a href="https://www.ted.com/talks/ted_ed_why_you_procrastinate_even_when_it_feels_bad"><img src="images/TED-ED-1.jpg" alt="" class="thumbnail"></a>
+                            <h6 class="text-xs font-bold text-gray-500 uppercase mb-2">JEN GUNTER</h6>
+                            <h4 class="vidHeads">Do you really need 8 hours of sleep every night?</h4>
+                        </div>
+                        <div>
+                            <a href="https://www.ted.com/talks/jessie_christiansen_what_the_discovery_of_exoplanets_reveals_about_the_universe"><img src="images/TED_ED-2.jpg" alt="" class="thumbnail"></a>
+                            <h6>STACY KAUK</h6>
+                            <h4 class="vidHeads">The billion-dollar pollution solution humanity needs right now</h4>
+                        </div>
+                        <div>
+                            <a href="https://www.ted.com/talks/colin_averill_how_to_harness_the_ancient_partnership_between_forests_and_fungi"><img src="images/TED_ED-3.jpg" alt="" class="thumbnail"></a>
+                            <h6>FRANCES S. CHANCE</h6>
+                            <h4 class="vidHeads">Are insect brains the secret to great AI?</h4>
+                        </div>
+                        <div>
+                            <h6 class="text-xs font-bold text-gray-500 uppercase mb-2">JEN GUNTER</h6>
+                            <h4 class="vidHeads">Do you really need 8 hours of sleep every night?</h4>
+                        </div>
+                        <div>
+                            <h6>FRANCES S. CHANCE</h6>
+                            <h4 class="vidHeads">Are insect brains the secret to great AI?</h4>
+                        </div>
+                        <div>
+                            <h6 class="text-xs font-bold text-gray-500 uppercase mb-2">JEN GUNTER</h6>
+                            <h4 class="vidHeads">Do you really need 8 hours of sleep every night?</h4>
+                        </div>
+                        <div>
+                            <h6>FRANCES S. CHANCE</h6>
+                            <h4 class="vidHeads">Are insect brains the secret to great AI?</h4>
+                        </div>
+                      </div>
+                </div>      
+            </div>
+        </section>
+        <!-- 1st video row ends-->
+      <hr>
+      <!-- 2nd video row-->
+      <section class="second-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings d-flex justify-content-between">
+            <h5>Newest Talk</h5>
+            <h5><a href="" class="newTalk">See all newest talk <span><i class="fa fa-angle-right"></i></span></a></h5>
+           </div>
+            <div class="row newest-talk mt-2">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/newest_talk-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>MARIAM VEISZADEH</h6>
+                        <h4 class="vidHeads">How to recognize privilege – and uplift those without it</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>CLEMENTINE JACOBY</h6>
+                        <h4 class="vidHeads">How bad data traps people in the US justice system</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>MANU PENI</h6>
+                        <h4 class="vidHeads">The sustainable brilliance of Indigenous design</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>BEN GRAN</h6>
+                        <h4 class="vidHeads">Why nurses are key to medical innovation</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+                    <div>
+                        <h6>CLEMENTINE JACOBY</h6>
+                        <h4 class="vidHeads">How bad data traps people in the US justice system</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+                    <div>
+                        <h6>MARIAM VEISZADEH</h6>
+                        <h4 class="vidHeads">How to recognize privilege – and uplift those without it</h4>
+                        <p>Posted Jan 2023</p>
+                    </div>
+
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- 2nd video row ends-->
+
+      <!-- your intrest -->
+      <section>
+            <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8 techTabs">
+                <div class="row mt-5">
+                   <div class="col-lg-12 text-xl leading-md inline-block">
+                    <h3 class="text-white" style="font-size: 1.25rem;">What are your Intrest? (1/2)</h3>
+                    <p class="text-white" style="font-size: .875rem;line-height: 1.35;">You’ll receive personalized talk recommendations right here and in your inbox</p>
+                   </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <button type="button" class="btn btn-primary" id="techBtns">Technology</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Science</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Design</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Business</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Collobration</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Innovation</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Social Change</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Health</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Nature</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">The enviorment</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">The future</button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-lg-12">
+                        <button type="button" class="btn btn-primary" id="techBtns">Communication</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Activism</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Child development</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Pesonal Growth</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Huminity</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Society</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Identity</button>
+                        <button type="button" class="btn btn-primary" id="techBtns">Community</button>
+
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-12 d-flex">
+                    <button type="button" class="btn btn-primary" id="nextQuestion">Next question <span><i class="fa fa-angle-right"></i></span></button>
+                    <p class="text-white mt-2">Already have a TED account? <a href="" style="color: white;">Sign in</a> to see your recommendations</p>
+                    </div>
+                </div>
+            </div>
+        
+      </section>
+      <!-- your intrest ends -->
+
+      <!-- trending -->
+      <section class="trending-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-5 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Trending</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/newest_talk-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>DEEPA NARAYAN</h6>
+                        <h4 class="vidHeads">7 beliefs that can silence women -- and how to unlearn them</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>MATT WALKER</h6>
+                        <h4 class="vidHeads">How caffeine and alcohol affect your sleep</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>GABY BARRIOS</h6>
+                        <h4 class="vidHeads">Why gender-based marketing is bad for business</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/newest_talk-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>PRATIK SHAH</h6>
+                        <h4 class="vidHeads">How AI is making it easier to diagnose disease</h4>
+                    </div>
+                    <div>
+                        <h6>MATT WALKER</h6>
+                        <h4 class="vidHeads">How caffeine and alcohol affect your sleep</h4>
+                    </div>
+                    <div>
+                        <h6>PRATIK SHAH</h6>
+                        <h4 class="vidHeads">How AI is making it easier to diagnose disease</h4>
+                    </div>
+                    <div>
+                        <h6>GABY BARRIOS</h6>
+                        <h4 class="vidHeads">Why gender-based marketing is bad for business</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- trending ends -->
+
+      <!-- learn more -->
+
+      <section class="learnMore">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+            <div class="row solveProblems">
+                <div class="col-lg-6 mt-5">
+                    <h2 class="workProblem">We want to solve your work problems!</h2>
+                    <p class="workProblemPara">You could get advice on your workplace issue from the hosts of our new podcast Fixable. Submit your issue to professional development coaches Anne Morriss and Frances Frei below!</p>
+                    <button type="button" class="btn btn-primary" id="learnMore">Learn More</button>
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/problems.jpg" alt="" style="width: inherit;">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- learn more ends -->
+
+      <!-- shape the future -->
+      <section class="ai-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">How AI will shape the future</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/AI-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>HOLLY HERNDON</h6>
+                        <h4 class="vidHeads">What if you could sing in your favorite musician's voice?</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/Ai-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>ANICKA YI</h6>
+                        <h4 class="vidHeads">Intelligent floating machines inspired by nature</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/AI-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>JEANETTE WINTERSON</h6>
+                        <h4 class="vidHeads">Is humanity smart enough to survive itself?</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/AI-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>SOFIA CRESPO</h6>
+                        <h4 class="vidHeads">AI-generated creatures that stretch the boundaries of imagination</h4>
+                    </div>
+                    <div>
+                        <h6>ANICKA YI</h6>
+                        <h4 class="vidHeads">Intelligent floating machines inspired by nature</h4>
+                    </div>
+                    <div>
+                        <h6>JEANETTE WINTERSON</h6>
+                        <h4 class="vidHeads">Is humanity smart enough to survive itself?</h4>
+                    </div>
+                    <div>
+                        <h6>ANICKA YI</h6>
+                        <h4 class="vidHeads">Intelligent floating machines inspired by nature</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- shapre the future edns -->
+
+      <!-- ted-ed -->
+      <section class="ted-ed-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">TED-Ed animations: Feed your curiosity</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/TED-ED-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Why you procrastinate even when it feels bad</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/TED_ED-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Why is it so hard to cure the common cold?</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/TED_ED-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Is capitalism actually broken?</h4>
+                    </div>
+                    <div>
+                        <h6>SORAYA FIELD FIORIO</h6>
+                        <h4 class="vidHeads">How did they build the Great Pyramid of Giza?</h4>
+                    </div>
+                    <div>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Is capitalism actually broken?</h4>
+                    </div>
+                    <div>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Why is it so hard to cure the common cold?</h4>
+                    </div>
+                    <div>
+                        <h6>TED-ED</h6>
+                        <h4 class="vidHeads">Is capitalism actually broken?</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- ted-ed ends -->
+      <hr>
+      <!-- explore playlist -->
+      <section class="countdown-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Explore playlists</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <h6>25 TALKS</h6>
+                        <h4 class="vidHeads">The most popular talks of all time</h4>
+                    </div>
+                    <div>
+                        <h6>22 TALKS</h6>
+                        <h4 class="vidHeads">Editor's Picks of 2022</h4>
+                    </div>
+                    <div>
+                        <h6>10 TALKS</h6>
+                        <h4 class="vidHeads">The most popular TED-Ed Lessons of 2022</h4>
+                    </div>
+                    <div>
+                        <h6>10 TALKS</h6>
+                    <h4 class="vidHeads">The must-watch climate talks of 2022</h4>
+                    </div>
+                    <div>
+                        <h6>10 TALKS</h6>
+                        <h4 class="vidHeads">The most popular TED-Ed Lessons of 2022</h4>
+                    </div>  
+                    <div>
+                        <h6>22 TALKS</h6>
+                        <h4 class="vidHeads">Editor's Picks of 2022</h4>
+                    </div>
+                    <div>
+                        <h6>25 TALKS</h6>
+                        <h4 class="vidHeads">The most popular talks of all time</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- explore playlist ends -->
+      <hr>
+      <!-- countdown -->
+      <section class="countdown-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Countdown: Take action on climate</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/countdown-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>TED COUNTDOWN</h6>
+                        <h4 class="vidHeads">Is there a role for carbon credits in the transition to a fair, net-zero future?</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/countdown-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>JOHAN ROCKSTRÖM</h6>
+                        <h4 class="vidHeads">10 years to transform the future of humanity -- or destabilize the planet</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/countdown-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>VAITEA COWAN</h6>
+                        <h4 class="vidHeads">How green hydrogen could end the fossil fuel era</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/countdown-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>HUMA YUSUF</h6>
+                        <h4 class="vidHeads">A new social contract for global climate justice</h4>
+                    </div>
+                    <div>
+                        <h6>JOHAN ROCKSTRÖM</h6>
+                        <h4 class="vidHeads">10 years to transform the future of humanity -- or destabilize the planet</h4>
+                    </div>
+                    <div>
+                        <h6>VAITEA COWAN</h6>
+                        <h4 class="vidHeads">How green hydrogen could end the fossil fuel era</h4>
+                    </div>
+                    <div>
+                        <h6>VAITEA COWAN</h6>
+                        <h4 class="vidHeads">How green hydrogen could end the fossil fuel era</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- countdown-ends -->
+
+      <!-- hideen-gems -->
+      <section class="hiddenGems-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Hidden gems from TEDx</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/hidden-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>LINDEN VAZEY</h6>
+                        <h4 class="vidHeads">Can you be yourself at work?</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/hidden-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>FRANCIS SANZARO</h6>
+                        <h4 class="vidHeads">The case for keeping the wilderness wild</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/hidden-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>FAHEEM CURTIS-KHIDR</h6>
+                        <h4 class="vidHeads">How the higher education system fails Black educators</h4>
+                    </div>
+                    <div>
+                        <h6>MIKE MERRILL</h6>
+                        <h4 class="vidHeads">How I became the world's first publicly traded person</h4>
+                    </div>
+                    <div>
+                        <h6>FRANCIS SANZARO</h6>
+                        <h4 class="vidHeads">The case for keeping the wilderness wild</h4>
+                    </div>
+                    <div>
+                        <h6>FAHEEM CURTIS-KHIDR</h6>
+                        <h4 class="vidHeads">How the higher education system fails Black educators</h4>
+                    </div>
+                    <div>
+                        <h6>MIKE MERRILL</h6>
+                        <h4 class="vidHeads">How I became the world's first publicly traded person</h4>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6>LINDEN VAZEY</h6>
+                        <h4 class="vidHeads">Can you be yourself at work?</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- hidden-gems-ends -->
+    
+      <!-- radio hours -->
+      <section class="radioHours-video-row">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Heard on TED Radio Hour</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/radio-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>WENDY SUZUKI</h6>
+                        <h4 class="vidHeads">The brain-changing benefits of exercise</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/radio-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>WENDY DE LA ROSA</h6>
+                        <h4 class="vidHeads">Can't stick to a budget? Try these tweaks instead</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/radio-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>CATHERINE PRICE</h6>
+                        <h4 class="vidHeads">Why having fun is the secret to a healthier life</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/radio-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>SANDRA AAMODT</h6>
+                        <h4 class="vidHeads">Why dieting doesn't usually work</h4>
+                    </div>
+                    <div>
+                        <h6>CATHERINE PRICE</h6>
+                        <h4 class="vidHeads">Why having fun is the secret to a healthier life</h4>
+                    </div>
+                    <div>
+                        <h6>WENDY DE LA ROSA</h6>
+                        <h4 class="vidHeads">Can't stick to a budget? Try these tweaks instead</h4>
+                    </div>
+                    <div>
+                        <h6>SANDRA AAMODT</h6>
+                        <h4 class="vidHeads">Why dieting doesn't usually work</h4>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </section>
+      <!-- radio hours ends -->
+
+      <!-- ted collective  -->
+      <section class="radioHours-video-row" id="radioHours">
+        <div class="container-fluid w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+           <div class="headings">
+            <h4 class="rowHeads">Meet the TED Audio Collective</h4>
+           </div>
+            <div class="row newest-talk">
+                <div class="owl-carousel">
+                    <div>
+                        <a href=""><img src="images/meet-1.jpg" alt="" class="thumbnail"></a>
+                        <h6>FAR FLUNG</h6>
+                        <h4 class="vidHeads">Virtual Worlds</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/meet-2.jpg" alt="" class="thumbnail"></a>
+                        <h6>THE TED INTERVIEW</h6>
+                        <h4 class="vidHeads">Michael Tubbs on politics as a force for good</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/meet-3.jpg" alt="" class="thumbnail"></a>
+                        <h6>WORKLIFE WITH ADAM GRANT</h6>
+                        <h4 class="vidHeads">How to Rethink a Bad Decision</h4>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/meet-4.jpg" alt="" class="thumbnail"></a>
+                        <h6>TED AUDIO COLLECTIVET</h6>
+                        <h4 class="vidHeads">Introducing Body Stuff with Dr. Jen Gunter</h4>
+                    </div>
+                    <div>
+                        <h6>THE TED INTERVIEW</h6>
+                        <h4 class="vidHeads">Michael Tubbs on politics as a force for good</h4>
+                    </div>
+                    <div>
+                        <h6>WORKLIFE WITH ADAM GRANT</h6>
+                        <h4 class="vidHeads">How to Rethink a Bad Decision</h4>
+                    </div>
+                    <div>
+                        <h6>TED AUDIO COLLECTIVET</h6>
+                        <h4 class="vidHeads">Introducing Body Stuff with Dr. Jen Gunter</h4>
+                    </div>
+                  </div>
+            </div>
+            <div class="row w-full px-5 md:px-10 xl:px-16 pt-5 pb-10 bg-white md:pb-16">
+                <div class="col-lg-8 offset-2">
+                    <h4 class="aboutTed">About TED</h4>
+                    <p class="aboutPara">TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 110 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- ted collective ends -->
+
+      <section class="">
+        <div class="container-fluid">
+            <div class="row w-full px-5 md:px-10 xl:px-16 pt-4 pb-8">
+                <img src="images/tedlogo.png" alt="" style="height: 2.5rem;">
+            </div>
+            <hr>
+            <div class="row offset-1">
+                <div class="col-lg-3 mt-2">
+                    <h6 class="mb-4 tedColHeads">Programs & initiatives</h6>
+                    <p><a href="" class="footerLinks">TEDx</a></p>
+                    <p><a href="" class="footerLinks">TED Fellows</a></p>
+                    <p><a href="" class="footerLinks">TED Ed</a></p>
+                    <p><a href="" class="footerLinks">TED Transitor</a></p>
+                    <p><a href="" class="footerLinks">TED Institute</a></p>
+                    <p><a href="" class="footerLinks">The Audacious Project</a></p>
+                    <p><a href="" class="footerLinks">TED@Work</a></p>
+                    <p><a href="" class="footerLinks">TED Speakers Bureau</a></p>
+                    <p><a href="" class="footerLinks">TED Courses</a></p>
+                </div>
+                <div class="col-lg-3 mt-2">
+                    <h6 class="mb-4 tedColHeads">Ways to get TED</h6>
+                    <p><a href="" class="footerLinks">Poadcast</a></p>
+                    <p><a href="" class="footerLinks">More ways to get TED</a></p>
+                </div>
+                <div class="col-lg-3 mt-2">
+                    <h6 class="mb-4 tedColHeads>Follow">Follow TED</h6>
+                    <p><a href="" class="footerLinks">Facebook</a></p>
+                    <p><a href="" class="footerLinks">Twitter</a></p>
+                    <p><a href="" class="footerLinks">Instagram</a></p>
+                    <p><a href="" class="footerLinks">YouTube</a></p>
+                    <p><a href="" class="footerLinks">LinkedIn</a></p>
+                    <p><a href="" class="footerLinks">TED Bolg</a></p>
+                </div>
+                <div class="col-lg-3 mt-2">
+                    <h6 class="mb-4 tedColHeads">Our community</h6>
+                    <p><a href="" class="footerLinks">TED Speakers</a></p>
+                    <p><a href="" class="footerLinks">TED Fellows</a></p>
+                    <p><a href="" class="footerLinks">TED Transtor</a></p>
+                    <p><a href="" class="footerLinks">TED Organizers</a></p>
+                    <p><a href="" class="footerLinks">TED Community</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row offset-1">
+                <div class="col-lg-6">
+                    <h6 class="tedMember"><a href="" class="member">Become a TED Member</a></h6>
+                    <p>Engage with TED in a whole new way. TED Members earn exclusive access to unforgettable events with big names from the TED stage, inspiring conversations with a global community, and more.</p>
+                </div>
+                <div class="col-lg-6">
+                    <h6 class="tedMember"><a href="" class="member">Want personalized recommendations?</a></h6>
+                    <p>Join TED Recommends and get the perfect ideas selected just for you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid" style="background-color: rgba(246,246,246);">
+            <div class="row offset-1">
+                <div class="col-lg-3 mt-4 mb-4">
+                    <p><a href="" class="footerLinks">TED Talks Usage Policy</a></p>
+                    <p><a href="" class="footerLinks">Jobs</a></p>
+                </div>
+                <div class="col-lg-3 mt-4 mb-4">
+                    <p><a href="" class="footerLinks">Privacy Policy</a></p>
+                    <p><a href="" class="footerLinks">Press</a></p>
+                </div>
+                <div class="col-lg-3 mt-4 mb-4">
+                    <p><a href="" class="footerLinks">Adversting/Partnership</a></p>
+                    <p><a href="" class="footerLinks">Help</a></p>
+                </div>
+                <div class="col-lg-3 mt-4 mb-4">
+                    <p><a href="" class="footerLinks">TED.com Terms of Use</a></p>
+                    <p><a href="" class="footerLinks">Privacy Preference</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row offset-1 mt-4">
+                <div class="copyright mb-5">
+                    &copy; TED Conference, LLC.All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- script -->
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js" integrity="sha512-9CWGXFSJ+/X0LWzSRCZFsOPhSfm6jbnL+Mpqo0o8Ke2SYr8rCTqb4/wGm+9n13HtDE1NQpAEOrMecDZw4FXQGg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
+</body>
+</html>
